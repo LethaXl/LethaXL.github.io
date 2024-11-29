@@ -1,31 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lab 10 - Web Framework</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Built This Page with Materialize</title>
+    <link href="https://cdn.jsdelivr.net/npm/materialize-css@1.0.0/dist/css/materialize.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding-top: 30px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h3 {
+            color: #16a085;
+        }
+        p {
+            line-height: 1.6;
+            color: #34495e;
+        }
+        pre {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        code {
+            background-color: #ecf0f1;
+            padding: 2px 6px;
+            border-radius: 5px;
+        }
+        .section {
+            margin-top: 40px;
+        }
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            color: #7f8c8d;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>How I Built My Web Page</h1>
-    <h3>Framework Used: Materialize</h3>
-    <p><strong>1. How I Installed the Framework:</strong><br>
-       I linked the Materialize CSS and JS files from the CDN in the HTML document. This allowed me to easily use Materialize's components and styles.</p>
-    
-    <p><strong>2. How I Built the Page:</strong><br>
-       I structured the page using Materialize’s grid system for layout, added a navbar, and styled elements like buttons and forms using Materialize's predefined classes.</p>
 
-    <p><strong>3. Difficulties and Solutions:</strong><br>
-       Initially, I had trouble with the grid alignment. After consulting the documentation, I used `row` and `col` classes more effectively and adjusted column sizes for proper alignment.</p>
-    
-    <div class="row">
-      <div class="col s12 m6 l4">
-        <h5>Example Section</h5>
-        <p>This section uses Materialize grid system.</p>
-      </div>
+    <div class="container">
+        <h1 class="center-align">How I Built This Page with Materialize</h1>
+
+        <div class="section">
+            <p>For this project, I used <strong>Materialize</strong>, a CSS framework that helps design nice, responsive websites. Here's how I installed the framework and built the page:</p>
+
+            <h2>1. Installing Materialize</h2>
+            <p>To install Materialize, I didn’t have to download anything to my computer. Instead, I used a special link called a CDN (Content Delivery Network). A CDN is a shortcut to get the Materialize framework directly from the internet, without having to store it on my own computer. I added this link in the <code>&lt;head&gt;</code> section of my HTML page:</p>
+            <pre><code>&lt;link href="https://cdn.jsdelivr.net/npm/materialize-css@1.0.0/dist/css/materialize.min.css" rel="stylesheet"&gt;</code></pre>
+            <p>This allowed me to use Materialize’s styles on my page.</p>
+        </div>
+
+        <div class="section">
+            <h2>2. Building the Page</h2>
+            <p>Once I had Materialize installed, I started creating my page. I used Materialize's grid system to arrange everything on the page, so it would look good on both small and large screens. For example:</p>
+            <ul>
+                <li>A header at the top with the title "How I Built This Page with Materialize".</li>
+                <li>Some paragraphs explaining how I installed the framework and built the page.</li>
+                <li>Simple text and buttons using Materialize’s pre-designed styles.</li>
+            </ul>
+            <p>Materialize comes with ready-made buttons, text fields, and grids that helped me build a simple but good-looking page without starting from scratch.</p>
+        </div>
+
+        <div class="section">
+            <h2>3. Challenges and Solutions</h2>
+            <p>While building the page, I ran into a few problems, but I was able to fix them:</p>
+            
+            <h3>Difficulty 1: Setting Up GitHub Pages</h3>
+            <p>The first problem I faced was setting up GitHub Pages. I wanted to use the GitHub Desktop app to upload my code, but for some reason, the app wouldn’t open. After trying to fix it by restarting my computer and reinstalling the app, I decided to upload my code directly on GitHub’s website instead. That worked perfectly!</p>
+            
+            <h3>Difficulty 2: Understanding Materialize’s Grid System</h3>
+            <p>Another problem was understanding how Materialize’s grid system worked. I wanted my page to look good on both small phones and big screens, but at first, I didn’t know how to use the grid system. After reading the Materialize documentation and trying out different things, I figured it out. I used rows and columns to arrange the content and make it responsive.</p>
+
+            <h3>Difficulty 3: Styling Issues</h3>
+            <p>The last issue I had was with the layout of my text and buttons. They weren’t aligned the way I wanted. This was because I didn’t fully understand how to use the Materialize classes for spacing and alignment. But after looking at examples and experimenting, I was able to fix it by adding the right classes to control the margins and align everything properly.</p>
+        </div>
+
+        <div class="section">
+            <h2>Conclusion</h2>
+            <p>In the end, I was able to build a simple, responsive webpage using Materialize. Even though I faced some challenges with setting up GitHub Pages and learning how to use Materialize, it was a great learning experience. I now feel more confident using web frameworks and understanding how to create good-looking websites quickly.</p>
+        </div>
+
+        <footer>
+            <p>Made with Materialize | GitHub Pages</p>
+        </footer>
     </div>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/materialize-css@1.0.0/dist/js/materialize.min.js"></script>
 </body>
 </html>

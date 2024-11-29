@@ -1,7 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 10 - Web Framework</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <div class="container">
+    <h1>How I Built My Web Page</h1>
+    <h3>Framework Used: Materialize</h3>
+    <p><strong>1. How I Installed the Framework:</strong><br>
+       I linked the Materialize CSS and JS files from the CDN in the HTML document. This allowed me to easily use Materialize's components and styles.</p>
+    
+    <p><strong>2. How I Built the Page:</strong><br>
+       I structured the page using Materialize’s grid system for layout, added a navbar, and styled elements like buttons and forms using Materialize's predefined classes.</p>
+
+    <p><strong>3. Difficulties and Solutions:</strong><br>
+       Initially, I had trouble with the grid alignment. After consulting the documentation, I used `row` and `col` classes more effectively and adjusted column sizes for proper alignment.</p>
+    
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <h5>Example Section</h5>
+        <p>This section uses Materialize grid system.</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
